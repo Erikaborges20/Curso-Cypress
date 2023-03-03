@@ -1,0 +1,4 @@
+npm init
+cypress --save-dev
+node_modules/.bin/cypress open o npx cypress open
+/// < reference type = "Cypress" /> // para que reconozca los comandos de cypress
