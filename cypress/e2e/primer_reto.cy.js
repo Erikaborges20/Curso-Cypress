@@ -6,7 +6,6 @@ describe("Primer ", () =>{
         cy.title().should('eq', 'DEMOQA')
         cy.get(".category-cards > :first-child").click()
         cy.get('span').contains('Web Tables').click()
-        // cy.get('//*[text()="Web Tables"]').click()
         cy.get("#addNewRecordButton").click()
         cy.get(".modal-body").should("be.visible")
         cy.get("#firstName").should("be.visible").and("be.enabled").type("Ramona")
